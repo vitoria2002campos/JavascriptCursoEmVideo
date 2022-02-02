@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro Programa</title>
+    <style>
+        body{
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá,mundo!</h1>
+    <script>
+       // var n1 = window.prompt('Digite um numero: ') // recebe valor string
+       // var n2 = window.prompt('Digite outro número: ') // recebe valor string
+
+        /*Para fazer a conversao de string para numero :*/
+        // number.parseInt(n) = inteiro number.parseFloat(n) = real
+        //versao simplificada que o javascript decide qual tipo de dado usar Number (n)
+
+        var n1 = Number.parseInt(window.prompt('Digite um numero: ')) 
+        var n2 = Number.parseInt(window.prompt('Digite outro número: ')) 
+
+
+        var resultado = n1 + n2
+
+       // window.alert('O resultado da soma é: ' + resultado)
+       window.alert(`A soma entre ${n1} e ${n2} é igual a ${resultado}`)
+        
+        // Convertendo number pra string: 
+        //window.alert('O resultado da soma é: ' + resultado.toString())
+        // ou
+        // window.alert('O resultado da soma é: ' + string(resultado))
+    
+    </script>
+</body>
+</html>
